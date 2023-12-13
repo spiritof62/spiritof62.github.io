@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Bitmap Scramble</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <script src="javascript.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body id="body">
+        <div class="jumbotron text-center">
+            <h1>Bitmap Scramble</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6"><!--The left-most column-->
+                    <table>
+                        <tr>
+                            <td>
+                                <div id="large-div">
+                                    <img id="large-image" draggable="false">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="status"></p>
+                                <input type="file" id="file-selector" accept=".bmp, .dib"><br>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-6"><!--The right-most column-->
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropbox">
+                                    <img class="draggedimage" draggable="true">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div> <!--class="row"-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <table>
+                        <tr>
+                            <td>
+                                <dialog align="center">
+                                    <p>Congratulations - you unscrambled the image!</p>
+                                    <form method="dialog">
+                                        <button>OK</button>
+                                    </form>
+                                </dialog>
+                                <p align="center">
+                                    To play the game, load a bitmap image from your device into the large box on the left using the
+                                    'Choose File' button. Square images work best - if the image isn't square, then a square area will
+                                     be extracted from the image for use in the game. Or instead of using the 'Choose File' button, you
+                                     can drag and drop from your desk top or from the sample gallery of album cover images below.
+                                     Whatever way it gets there, once an image is loaded into the large box, it will be scrambled into
+                                     the tiles on the right - drag and drop these tiles to put the image back together!
+                                </p>
+                                <p align="center">
+                                    Important: Currently only the bitmap file format (.bmp) is supported - other formats will not work.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div> <!--class="col-sm-12"-->
+            </div> <!--class="row"-->
+            <div class="row">
+                <div class="col-sm-12" align="center">
+                    <p align="center"><h3>Gallery</h3></p>
+                </div> <!--class="col-sm-12"-->
+            </div> <!--class="row"-->
+            <div class="row">
+                <div class="col-sm-1" align="center">
+                    <img src="alicia.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="flaming.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="floyd.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="nas.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="gaga.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="rage.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="audioslave.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="bowie.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="ringo.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="marvin.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="genesis.bmp" width="96px" height="auto">
+                </div>
+                <div class="col-sm-1" align="center">
+                    <img src="weezer.bmp" width="96px" height="auto">
+                </div>
+            </div> <!--class="row"-->
+        </div> <!--class="container"-->
+    </body>
+</html>

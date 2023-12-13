@@ -1,0 +1,18 @@
+1.  HTML drag and drop functionality was developed with help from web.dev
+    https://web.dev/articles/read-files#select-dnd and W3 Schools
+    https://www.w3schools.com/html/html5_draganddrop.asp.
+
+2.  Instruction on how to create decorators was provided by datacamp:
+    https://www.datacamp.com/tutorial/decorators-python.
+
+3.  Introduction to the forEach command in javascript was provided by stackoverflow:
+    https://stackoverflow.com/questions/8796988/binding-multiple-events-to-a-listener-without-jquery.
+
+4.  Using drag and drop to swap HTML elements was developed with assistance from
+    https://ramya-bala221190.medium.com/dragging-dropping-and-swapping-elements-with-javascript-11d9cdac2178.
+
+5.  Information on the bitmap file format was taken from Wikipedia:
+    https://en.wikipedia.org/wiki/BMP_file_format.
+
+6.  How to use DataViews to access data in ArrayBuffers was gleaned from
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView
